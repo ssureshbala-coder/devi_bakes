@@ -49,30 +49,30 @@
         }
 
         /* QR Code Styling */
-        .qr-code {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 140px;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease;
-        }
+        .qr-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
 
-        .qr-code:hover {
-            transform: scale(1.1);
-        }
+.qr-text {
+    display: block;
+    margin-top: 5px;
+}
     </style>
 </head>
 
 <body>
 
 <!-- Clickable QR Code -->
-<a href="https://instagram.com/brownie.box__" target="_blank">
+<a href="https://instagram.com/brownie.box__" target="_blank" class="qr-link">
     <img src="instagram-qr.jpeg" class="qr-code" alt="Instagram QR">
+    <span class="qr-text">Click here – Insta</span>
 </a>
-
 <div class="container">
 
     <h1>🍰 DEVI HOME BAKES</h1>
