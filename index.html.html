@@ -39,8 +39,9 @@
         .menu-item {
             background: rgba(255,255,255,0.1);
             margin: 10px auto;
-            padding: 10px;
-            width: 250px;
+            padding: 12px;
+            width: 90%;
+            max-width: 300px;
             border-radius: 10px;
         }
 
@@ -49,7 +50,6 @@
             padding-bottom: 20px;
         }
 
-        /* QR Link Container */
         .qr-link {
             position: fixed;
             top: 20px;
@@ -60,30 +60,50 @@
             font-size: 14px;
         }
 
-        /* QR Code Image */
         .qr-code {
             width: 140px;
-            height: auto;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease;
         }
 
-        .qr-code:hover {
-            transform: scale(1.1);
-        }
-
-        /* Text Below QR */
         .qr-text {
             display: block;
             margin-top: 6px;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+
+            h1 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .menu-item {
+                font-size: 14px;
+            }
+
+            .qr-link {
+                top: 10px;
+                right: 10px;
+            }
+
+            .qr-code {
+                width: 80px;
+            }
+
+            .qr-text {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<!-- Clickable QR Code + Text -->
 <a href="https://instagram.com/brownie.box__" target="_blank" class="qr-link">
     <img src="instagram-qr.jpeg" class="qr-code" alt="Instagram QR">
     <span class="qr-text">Click here – Insta</span>
