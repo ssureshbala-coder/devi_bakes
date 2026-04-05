@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DEVI HOME BAKES : Brownie Box</title>
+    <title>DEVI HOME BAKES - Brownie Box</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -37,19 +37,21 @@
         }
 
         .menu-item {
-            background: rgba(255,255,255,0.1);
-            margin: 10px auto;
-            padding: 12px;
+            background: rgba(255,255,255,0.15);
+            margin: 12px auto;
+            padding: 14px;
             width: 90%;
-            max-width: 300px;
-            border-radius: 10px;
+            max-width: 320px;
+            border-radius: 12px;
+            font-weight: bold;
         }
 
         .contact {
             margin-top: 30px;
-            padding-bottom: 20px;
+            padding-bottom: 80px;
         }
 
+        /* QR SECTION (DESKTOP ONLY FLOAT) */
         .qr-link {
             position: fixed;
             top: 20px;
@@ -71,7 +73,21 @@
             margin-top: 6px;
         }
 
-        /* MOBILE RESPONSIVE */
+        /* WHATSAPP BUTTON */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        /* 🔥 MOBILE RESPONSIVE */
         @media (max-width: 768px) {
 
             h1 {
@@ -86,27 +102,31 @@
                 font-size: 14px;
             }
 
+            /* ✅ QR moves into normal flow */
             .qr-link {
-                top: 10px;
-                right: 10px;
+                position: static;
+                display: block;
+                margin: 20px auto;
             }
 
             .qr-code {
-                width: 80px;
+                width: 110px;
             }
 
             .qr-text {
-                font-size: 10px;
+                font-size: 12px;
             }
         }
+
     </style>
 </head>
 
 <body>
 
+<!-- QR -->
 <a href="https://instagram.com/brownie.box__" target="_blank" class="qr-link">
     <img src="instagram-qr.jpeg" class="qr-code" alt="Instagram QR">
-    <span class="qr-text">Click here – Insta</span>
+    <span class="qr-text">Follow on Instagram</span>
 </a>
 
 <div class="container">
@@ -132,6 +152,11 @@
     </div>
 
 </div>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919047895770" target="_blank" class="whatsapp">
+    Order on WhatsApp
+</a>
 
 </body>
 </html>
